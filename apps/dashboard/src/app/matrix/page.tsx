@@ -1,7 +1,5 @@
 import { SupportCell } from "@/components/Badges";
-import { getCompanies, getFeatures, getMatrix, getMeta } from "@/lib/queries";
-
-export const dynamic = "force-dynamic";
+import { getCompanies, getFeatures, getMatrix, getMeta } from "@/lib/data";
 
 const MATRIX_COMPANIES = [
   "xai",

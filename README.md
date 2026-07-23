@@ -1,123 +1,213 @@
 # Frontier Feature Tracker
 
-Living **Competitive Feature, Model Release, and Market Share Opportunity Tracker** for xAI / SpaceXAI.
+**Living competitive intelligence for frontier AI models, product surfaces, and market-share opportunities.**
 
-Tracks Western and Chinese frontier models and product surfaces, scores **explicit Grok gaps**, and flags **steal market share** moves tied to public financial signals.
+A static analyst dashboard that tracks Western and Chinese frontier labs, scores **explicit Grok / xAI gaps**, and flags **steal-market-share** moves tied to public financial signals.
 
-**Baseline:** July 2026 · **Dashboard:** http://localhost:3456
+[![Deploy to GitHub Pages](https://github.com/rdsciv/FrontierFeatureTracker/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/rdsciv/FrontierFeatureTracker/actions/workflows/deploy-pages.yml)
+
+### Live dashboard
+
+**https://rdsciv.github.io/FrontierFeatureTracker/**
 
 ---
 
-## Quick start
+## Why this exists
+
+Frontier competition is no longer “who has the best chat model.” It is:
+
+- **Desktop Work super-apps** (Chat + agentic work + coding)
+- **Managed coding agents and IDE depth**
+- **Partner / consultant channels** with nine-figure funding
+- **Hardware packaging** for agent workflows
+- **Chinese open-weight velocity and cost pressure**
+- **Public enterprise GTM** (case studies, ROI, transparency)
+
+This tracker turns those signals into scored gaps and actionable recommendations for product, GTM, and leadership.
+
+---
+
+## What’s inside
+
+| View | What you get |
+|------|----------------|
+| **Command Center** | High-priority gaps, critical events, opportunities, Chinese velocity pulse |
+| **Feature Matrix** | Companies × capabilities (desktop, agentic, coding, multimodal, enterprise, channel…) |
+| **Gaps** | Grok-centric gap board with revenue / demand / urgency scoring |
+| **Opportunities** | “Steal market share here” recommendations |
+| **Timeline** | Model releases + competitive events with capability deltas |
+| **Chinese Velocity** | DeepSeek, Kimi, Qwen, GLM, MiniMax, ByteDance |
+| **Financial** | ARR estimates, partner commitments, acquisition signals (with reliability badges) |
+| **Products** | Desktop Work apps, hardware, partner networks, education, enterprise packaging |
+| **Sources** | Monitored official pages for local collectors |
+
+### July 2026 baseline highlights
+
+Seeded gaps include:
+
+1. No polished Work / desktop super-app (vs Claude Desktop, ChatGPT Work)
+2. Cursor → Grok Build productization incomplete (SpaceX $60B deal, exp. close Q3 2026)
+3. Enterprise public GTM visibility lag
+4. No formal funded partner network (OpenAI $150M / Anthropic $100M)
+5. Chinese open-weight cost & velocity (DeepSeek V4, Kimi K2.6)
+6. Imagine packaging vs Codex Micro hardware
+7. Education / Academy stack vs Google
+8. Hackathon / community scale
+
+---
+
+## Screenshots (in-browser)
+
+Open the [live site](https://rdsciv.github.io/FrontierFeatureTracker/) — dark analyst UI with sticky nav:
+
+- `/` — Command Center KPIs  
+- `/matrix/` — Grok gap matrix  
+- `/gaps/` — scored recommendations  
+- `/chinese/` — CN open-weight board  
+- `/financial/` — market signals  
+
+---
+
+## Quick start (local)
+
+Requires **Node 20+** (Node 22+ recommended).
 
 ```bash
-# From repo root
+git clone https://github.com/rdsciv/FrontierFeatureTracker.git
+cd FrontierFeatureTracker
 npm install
-npm run seed          # load data/seed/baseline-2026-07.yaml → data/tracker.db
-npm run dev           # dashboard on :3456
-npm run collect       # daily source hash check + alerts
-npm run report:baseline
+npm run dev
+```
+
+Open **http://localhost:3456**
+
+```bash
+# Rebuild static snapshot from YAML seed
+npm run export-data
+
+# Production static export (local paths)
+npm run build
+# → apps/dashboard/out
+
+# Production export with GitHub Pages base path
+npm run build:pages
+```
+
+### Optional: local SQLite + collectors
+
+For offline analytics and change detection:
+
+```bash
+npm run seed              # YAML → data/tracker.db (node:sqlite)
+npm run collect           # hash-monitor data/sources.yaml
+npm run report:baseline   # markdown report
 npm run report:weekly
 ```
 
-Optional webhook for change alerts:
-
-```bash
-export FFT_WEBHOOK_URL=https://hooks.slack.com/services/...
-npm run collect
-```
+Collectors run in **proposal mode**: they record scrape runs and events; they never auto-edit curated gaps or the feature matrix.
 
 ---
 
-## What you get
+## How data is maintained
 
-| View | Purpose |
-|------|---------|
-| **Command Center** | High gaps, critical events, opportunities, Chinese pulse |
-| **Feature Matrix** | Companies × capabilities; Grok-gap primary lens |
-| **Gaps** | Scored gap board with recommended actions + sources |
-| **Opportunities** | Steal-share recommendations |
-| **Timeline** | Model releases + competitive events |
-| **Chinese Velocity** | Open-weight cadence and cost pressure board |
-| **Financial** | ARR estimates, partner $ commitments, IR placeholders |
-| **Products** | Desktop Work, hardware, partners, education, enterprise |
-| **Sources** | Collector health and monitored URLs |
+| Layer | Role |
+|-------|------|
+| `data/seed/baseline-2026-07.yaml` | **Curated truth** — edit here, PR-reviewable |
+| `npm run export-data` | Builds `apps/dashboard/src/data/tracker.json` for the static site |
+| `data/sources.yaml` | URLs for daily/weekly collectors |
+| `reports/` | Baseline and weekly markdown summaries |
+
+### Priority scoring
+
+```
+priority_score = 0.4 × revenue_impact
+               + 0.3 × user_demand
+               + 0.3 × competitive_urgency
+```
+
+Each component is 1–5. **High ≥ 3.5**, **Medium ≥ 2.5**, else **Low**.
+
+### Governance
+
+- Prefer official primary sources; label press estimates.
+- Every claim should carry sources and as-of awareness.
+- Be fair to Grok: enterprise identity features exist; gaps are mostly packaging, desktop, channel, visibility, and Cursor migration.
 
 ---
 
 ## Architecture
 
 ```
-apps/dashboard/       Next.js 15 analyst dashboard
-packages/schema/      Zod types + priority scoring
-packages/db/          Drizzle schema, SQLite, seed loader
-packages/collectors/  HTTP change detection (proposal mode)
-data/seed/            Git-versioned curated baseline YAML
-data/sources.yaml     Monitored URLs
-data/tracker.db       Runtime SQLite (gitignored)
-reports/              Baseline + weekly markdown
+FrontierFeatureTracker/
+├── apps/dashboard/          # Next.js 15 static export (GitHub Pages)
+│   └── src/data/tracker.json
+├── packages/
+│   ├── schema/              # Zod types + scoring
+│   ├── db/                  # Optional local SQLite seed/queries
+│   └── collectors/          # Optional HTTP change detection
+├── data/
+│   ├── seed/                # Curated YAML baseline
+│   └── sources.yaml
+├── scripts/                 # export-data, reports
+├── reports/
+└── .github/workflows/       # Pages deploy
 ```
 
-**Curated truth** lives in YAML (PR-reviewable). **Collectors** only write scrape runs, content hashes, and events — they do **not** auto-edit matrix or gaps.
+**Runtime on Pages:** fully static HTML/JS/CSS. No server, no database.
 
-### Priority scoring
+---
+
+## Deploy (GitHub Pages)
+
+This repo deploys automatically on every push to `main`:
+
+1. Workflow: [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
+2. Builds with `GITHUB_PAGES=true` (sets `basePath` to `/FrontierFeatureTracker`)
+3. Uploads `apps/dashboard/out` to GitHub Pages
+
+**Manual enable (once):** repo **Settings → Pages → Source: GitHub Actions**.
+
+Site URL:
 
 ```
-priority_score = 0.4 * revenue_impact
-               + 0.3 * user_demand
-               + 0.3 * competitive_urgency
+https://rdsciv.github.io/FrontierFeatureTracker/
 ```
 
-High ≥ 3.5 · Medium ≥ 2.5 · Low &lt; 2.5
+---
+
+## Cadence (recommended)
+
+| Cadence | Action |
+|---------|--------|
+| **Daily** | `npm run collect` in a local clone; review alerts |
+| **Weekly** | Update seed YAML after feature audit; push → Pages rebuilds |
+| **Quarterly** | Earnings / IR deep-dive; refresh `financialSignals` |
 
 ---
 
-## Cadence
+## Companies tracked (core set)
 
-| Cadence | Job |
-|---------|-----|
-| **Daily** | `npm run collect` — product/docs/pricing hash changes → `reports/alerts/` |
-| **Weekly** | Human feature audit; edit seed YAML; `npm run seed`; `npm run report:weekly` |
-| **Real-time** | Critical model/product launches → add `events` in seed or insert via tooling |
-| **Quarterly** | Earnings deep-dive; refresh `financialSignals` from IR / 10-Q |
+**Western:** xAI / SpaceXAI, OpenAI, Anthropic, Google / DeepMind, Meta, Microsoft, Amazon, Mistral (watch), Anysphere / Cursor  
+
+**Chinese:** DeepSeek, Moonshot / Kimi, Alibaba / Qwen, Zhipu / GLM, MiniMax, ByteDance  
 
 ---
 
-## Updating competitive data
+## Contributing
 
-1. Edit `data/seed/baseline-2026-07.yaml` (or add a new dated seed file).
-2. Require `sourceUrls` / reliability labels on claims; mark estimates.
-3. `npm run seed`
-4. Confirm in dashboard and re-run `npm run report:baseline` when doing a formal refresh.
-
----
-
-## Seeded High gaps (July 2026)
-
-1. No polished Work / desktop super-app (vs Claude Desktop, ChatGPT Work)
-2. Cursor → Grok Build productization incomplete ($60B deal, close Q3 2026)
-3. Imagine under-packaged vs Codex Micro hardware ecosystem
-4. Enterprise public GTM / case study visibility lag
-5. No formal funded partner / consultant network ($150M OpenAI / $100M Anthropic)
-6. No Google-class education / Academy stack
-7. Limited hackathon scale
-8. Chinese open-weight cost & velocity pressure (DeepSeek V4, Kimi K2.6)
-
-See `reports/baseline-2026-07.md` after first seed + report run.
+1. Edit `data/seed/baseline-2026-07.yaml` (or add a new dated seed).
+2. Run `npm run export-data` and sanity-check with `npm run dev`.
+3. Open a PR with sources and reliability notes for new claims.
 
 ---
 
-## Governance
+## License
 
-- Every claim should have `sourceUrls` and as-of awareness.
-- Estimates: `isEstimate: true` + `sourceReliability`.
-- Fair to Grok: Enterprise SSO/SCIM exist — gaps are packaging, desktop, channel, visibility, migration.
-- Prefer official primary sources over secondary blogs when both exist.
+Data and analysis in this repository are provided for research and product strategy purposes.  
+Third-party trademarks and product names belong to their respective owners.
 
 ---
 
-## Stack
+## Disclaimer
 
-Node 22+ (uses built-in `node:sqlite`) · TypeScript · Next.js 15 · Zod · YAML
-
-No native SQLite addons — works on Node 26+ without node-gyp.
+ARR figures and some capability claims are **press-reported estimates** unless marked official. Always re-verify against primary sources before executive or investment decisions.

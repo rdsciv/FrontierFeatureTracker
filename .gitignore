@@ -2,8 +2,11 @@ node_modules/
 dist/
 .next/
 out/
+apps/dashboard/out/
 *.db
 *.db-journal
+*.db-shm
+*.db-wal
 data/tracker.db
 data/cache/
 .env
@@ -13,3 +16,5 @@ data/cache/
 .turbo/
 coverage/
 reports/alerts/
+.worktrees/
+*.tsbuildinfo

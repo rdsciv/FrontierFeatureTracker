@@ -8,7 +8,11 @@
     "packages/*"
   ],
   "scripts": {
+    "export-data": "tsx scripts/export-static-data.ts",
+    "predev": "npm run export-data",
+    "prebuild": "npm run export-data",
     "build": "npm run build -w @fft/dashboard",
+    "build:pages": "GITHUB_PAGES=true GITHUB_REPOSITORY=rdsciv/FrontierFeatureTracker npm run build",
     "seed": "npm run seed -w @fft/db",
     "dev": "npm run dev -w @fft/dashboard",
     "collect": "npm run collect -w @fft/collectors",
@@ -21,6 +25,7 @@
   },
   "devDependencies": {
     "tsx": "^4.20.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "yaml": "^2.8.0"
   }
 }

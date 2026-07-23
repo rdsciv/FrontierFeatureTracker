@@ -7,9 +7,7 @@ import {
   getOpportunities,
   getStats,
   getChineseModels,
-} from "@/lib/queries";
-
-export const dynamic = "force-dynamic";
+} from "@/lib/data";
 
 export default function CommandCenterPage() {
   const meta = getMeta();

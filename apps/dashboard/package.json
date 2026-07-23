@@ -9,8 +9,6 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@fft/db": "*",
-    "@fft/schema": "*",
     "next": "^15.3.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"

@@ -1,0 +1,2204 @@
+{
+  "baselineDate": "2026-07-01",
+  "asOf": "2026-07-22",
+  "exportedAt": "2026-07-23T10:08:56.084Z",
+  "companies": [
+    {
+      "id": "xai",
+      "name": "xAI / SpaceXAI",
+      "region": "western",
+      "type": "lab",
+      "website": "https://x.ai",
+      "notes": "Grok, Grok Build, Grok Imagine, API, Business, Enterprise. Parent ecosystem SpaceX post-IPO.",
+      "isCore": true
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "region": "western",
+      "type": "lab",
+      "website": "https://openai.com",
+      "notes": "ChatGPT super-app, Codex, Partner Network, Codex Micro hardware.",
+      "isCore": true
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "region": "western",
+      "type": "lab",
+      "website": "https://www.anthropic.com",
+      "notes": "Claude Desktop (Chat/Cowork/Code), Claude Partner Network, computer use.",
+      "isCore": true
+    },
+    {
+      "id": "google",
+      "name": "Google / DeepMind",
+      "region": "western",
+      "type": "lab",
+      "website": "https://deepmind.google",
+      "notes": "Gemini series, Vertex AI, Gemini for Education / Academy, Cloud Skills Boost.",
+      "isCore": true
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "region": "western",
+      "type": "lab",
+      "website": "https://ai.meta.com",
+      "notes": "Llama open-weight series; closed offerings watchlist.",
+      "isCore": true
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "region": "western",
+      "type": "cloud",
+      "website": "https://azure.microsoft.com",
+      "notes": "Azure AI + OpenAI partnership; first-party Copilot surfaces.",
+      "isCore": true
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "region": "western",
+      "type": "cloud",
+      "website": "https://aws.amazon.com",
+      "notes": "AWS Bedrock hosting Anthropic/OpenAI and others.",
+      "isCore": true
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "region": "chinese",
+      "type": "lab",
+      "website": "https://www.deepseek.com",
+      "notes": "V4-Pro / V4-Flash open-weight velocity and cost leadership.",
+      "isCore": true
+    },
+    {
+      "id": "moonshot",
+      "name": "Moonshot / Kimi",
+      "region": "chinese",
+      "type": "lab",
+      "website": "https://www.kimi.com",
+      "notes": "K2.6 / K2.7-Code; multi-agent and long-horizon coding loops.",
+      "isCore": true
+    },
+    {
+      "id": "alibaba",
+      "name": "Alibaba / Qwen",
+      "region": "chinese",
+      "type": "lab",
+      "website": "https://qwenlm.github.io",
+      "notes": "Qwen series open and API frontier releases.",
+      "isCore": true
+    },
+    {
+      "id": "zhipu",
+      "name": "Zhipu / GLM",
+      "region": "chinese",
+      "type": "lab",
+      "website": "https://www.zhipuai.cn",
+      "notes": "GLM series; enterprise China GTM strength.",
+      "isCore": true
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax",
+      "region": "chinese",
+      "type": "lab",
+      "notes": "Multimodal and speech/video frontier competitor.",
+      "isCore": true
+    },
+    {
+      "id": "bytedance",
+      "name": "ByteDance",
+      "region": "chinese",
+      "type": "lab",
+      "notes": "Doubao / Seed series; consumer distribution advantage.",
+      "isCore": true
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral",
+      "region": "western",
+      "type": "lab",
+      "website": "https://mistral.ai",
+      "notes": "European frontier watchlist.",
+      "isCore": false
+    },
+    {
+      "id": "anysphere",
+      "name": "Anysphere / Cursor",
+      "region": "western",
+      "type": "platform",
+      "website": "https://cursor.com",
+      "notes": "SpaceX $60B acquisition announced Jun 16 2026; expected close Q3 2026. Strategic for Grok Build.",
+      "isCore": true
+    }
+  ],
+  "models": [
+    {
+      "id": "grok-4-5",
+      "companyId": "xai",
+      "name": "Grok 4.5",
+      "slug": "grok-4.5",
+      "releaseDate": "2026-05-01",
+      "status": "ga",
+      "contextWindow": "2M (reported for related 4.x line; verify per SKU)",
+      "modalities": [
+        "text",
+        "image",
+        "tools"
+      ],
+      "openWeights": false,
+      "capabilityDelta": "Flagship for coding, low hallucination, agentic tool calling. Powers API + consumer + Business.",
+      "sourceUrls": [
+        "https://x.ai/api",
+        "https://docs.x.ai/developers/models"
+      ],
+      "lastVerifiedAt": "2026-07-22",
+      "notes": "Knowledge cut-off listed as Feb 1 2026 on docs for 4.5 line."
+    },
+    {
+      "id": "grok-build-0-1",
+      "companyId": "xai",
+      "name": "grok-build-0.1",
+      "slug": "grok-build-0.1",
+      "releaseDate": "2026-05-29",
+      "status": "preview",
+      "modalities": [
+        "text",
+        "tools"
+      ],
+      "openWeights": false,
+      "apiInputPerM": 1,
+      "apiOutputPerM": 2,
+      "capabilityDelta": "Coding model for Grok Build CLI; agentic coding, MCP; ~100+ tok/s.",
+      "sourceUrls": [
+        "https://x.ai/news/grok-build-0-1"
+      ],
+      "lastVerifiedAt": "2026-07-22"
+    },
+    {
+      "id": "gpt-5-5",
+      "companyId": "openai",
+      "name": "GPT-5.5",
+      "slug": "gpt-5.5",
+      "releaseDate": "2026-04-23",
+      "status": "ga",
+      "modalities": [
+        "text",
+        "image",
+        "tools",
+        "computer_use"
+      ],
+      "openWeights": false,
+      "capabilityDelta": "Frontier closed model concurrent with DeepSeek V4 window; powers ChatGPT Work + Codex computer use path.",
+      "sourceUrls": [
+        "https://openai.com"
+      ],
+      "lastVerifiedAt": "2026-07-22",
+      "notes": "Exact public pricing/context vary by SKU; track API docs."
+    },
+    {
+      "id": "gpt-5-6",
+      "companyId": "openai",
+      "name": "GPT-5.6",
+      "slug": "gpt-5.6",
+      "releaseDate": "2026-07-01",
+      "status": "ga",
+      "modalities": [
+        "text",
+        "image",
+        "tools",
+        "computer_use"
+      ],
+      "openWeights": false,
+      "capabilityDelta": "Faster computer use cited in ChatGPT Work / Codex desktop merge (Jul 2026).",
+      "sourceUrls": [
+        "https://openai.com/index/chatgpt-for-your-most-ambitious-work/"
+      ],
+      "lastVerifiedAt": "2026-07-22"
+    },
+    {
+      "id": "claude-opus-4-7",
+      "companyId": "anthropic",
+      "name": "Claude Opus 4.7",
+      "slug": "claude-opus-4.7",
+      "releaseDate": "2026-05-01",
+      "status": "ga",
+      "modalities": [
+        "text",
+        "image",
+        "tools",
+        "computer_use"
+      ],
+      "openWeights": false,
+      "capabilityDelta": "Top-tier closed reasoning on Artificial Analysis composites; desktop computer use.",
+      "sourceUrls": [
+        "https://www.anthropic.com"
+      ],
+      "lastVerifiedAt": "2026-07-22"
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "companyId": "deepseek",
+      "name": "DeepSeek V4-Pro",
+      "slug": "deepseek-v4-pro",
+      "releaseDate": "2026-04-24",
+      "status": "ga",
+      "paramsTotal": "1.6T",
+      "paramsActive": "49B",
+      "moe": true,
+      "contextWindow": "1M",
+      "modalities": [
+        "text",
+        "tools"
+      ],
+      "openWeights": true,
+      "license": "MIT",
+      "capabilityDelta": "Open-weight MoE frontier; coding + tools; heavy cost pressure on Western APIs.",
+      "sourceUrls": [
+        "https://api-docs.deepseek.com/news/news260424"
+      ],
+      "lastVerifiedAt": "2026-07-22"
+    },
+    {
+      "id": "deepseek-v4-flash",
+      "companyId": "deepseek",
+      "name": "DeepSeek V4-Flash",
+      "slug": "deepseek-v4-flash",
+      "releaseDate": "2026-04-24",
+      "status": "ga",
+      "paramsTotal": "284B",
+      "paramsActive": "13B",
+      "moe": true,
+      "contextWindow": "1M",
+      "modalities": [
+        "text",
+        "tools"
+      ],
+      "openWeights": true,
+      "license": "MIT",
+      "capabilityDelta": "Cheap/fast open MoE for high-volume agents.",
+      "sourceUrls": [
+        "https://api-docs.deepseek.com/news/news260424"
+      ],
+      "lastVerifiedAt": "2026-07-22"
+    },
+    {
+      "id": "kimi-k2-6",
+      "companyId": "moonshot",
+      "name": "Kimi K2.6",
+      "slug": "kimi-k2.6",
+      "releaseDate": "2026-04-20",
+      "status": "ga",
+      "paramsTotal": "1T",
+      "moe": true,
+      "modalities": [
+        "text",
+        "image",
+        "tools"
+      ],
+      "openWeights": true,
+      "license": "Modified MIT",
+      "capabilityDelta": "VLM; multi-agent swarms; multi-day plan-write-test-debug coding loops; bilingual strength.",
+      "sourceUrls": [
+        "https://www.kimi.com/blog/kimi-k2-6"
+      ],
+      "lastVerifiedAt": "2026-07-22"
+    },
+    {
+      "id": "kimi-k2-7-code",
+      "companyId": "moonshot",
+      "name": "Kimi K2.7-Code",
+      "slug": "kimi-k2.7-code",
+      "releaseDate": "2026-06-12",
+      "status": "ga",
+      "paramsTotal": "1T",
+      "paramsActive": "32B",
+      "moe": true,
+      "contextWindow": "256K",
+      "modalities": [
+        "text",
+        "tools"
+      ],
+      "openWeights": true,
+      "license": "Modified MIT",
+      "capabilityDelta": "Coding-focused successor on K2.6 base.",
+      "sourceUrls": [
+        "https://www.kimi.com"
+      ],
+      "lastVerifiedAt": "2026-07-22"
+    },
+    {
+      "id": "qwen-3-6",
+      "companyId": "alibaba",
+      "name": "Qwen3.6 Max / Preview",
+      "slug": "qwen-3.6",
+      "releaseDate": "2026-05-01",
+      "status": "ga",
+      "modalities": [
+        "text",
+        "image",
+        "tools"
+      ],
+      "openWeights": true,
+      "capabilityDelta": "Open-weight peer of Kimi/DeepSeek on AA Index composites.",
+      "sourceUrls": [
+        "https://qwenlm.github.io"
+      ],
+      "lastVerifiedAt": "2026-07-22"
+    },
+    {
+      "id": "gemini-3-1-pro",
+      "companyId": "google",
+      "name": "Gemini 3.1 Pro Preview",
+      "slug": "gemini-3.1-pro",
+      "releaseDate": "2026-05-01",
+      "status": "preview",
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "tools"
+      ],
+      "openWeights": false,
+      "capabilityDelta": "Multimodal + Cloud/Vertex distribution; education stack integration.",
+      "sourceUrls": [
+        "https://deepmind.google"
+      ],
+      "lastVerifiedAt": "2026-07-22"
+    },
+    {
+      "id": "llama-watch",
+      "companyId": "meta",
+      "name": "Llama (latest frontier open)",
+      "slug": "llama-frontier",
+      "status": "ga",
+      "modalities": [
+        "text",
+        "tools"
+      ],
+      "openWeights": true,
+      "capabilityDelta": "Meta open-weight distribution; track successive Llama major releases.",
+      "sourceUrls": [
+        "https://ai.meta.com"
+      ],
+      "lastVerifiedAt": "2026-07-22",
+      "notes": "Placeholder for latest Llama SKU — update on each Meta release."
+    }
+  ],
+  "products": [
+    {
+      "id": "claude-desktop",
+      "companyId": "anthropic",
+      "name": "Claude Desktop (Chat + Cowork + Code)",
+      "category": "desktop_work",
+      "description": "Native desktop app with Chat, Cowork (agentic knowledge work / Dispatch), and Code tabs; computer use on macOS/Windows.",
+      "platforms": [
+        "macOS",
+        "Windows"
+      ],
+      "launchDate": "2026-01-12",
+      "status": "ga",
+      "sourceUrls": [
+        "https://claude.com/download",
+        "https://code.claude.com/docs/en/desktop",
+        "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork"
+      ],
+      "notes": "Cowork GA Apr 2026; web/mobile Cowork Jul 2026. UI IA shifts (Projects merge) — track carefully."
+    },
+    {
+      "id": "chatgpt-desktop-work",
+      "companyId": "openai",
+      "name": "ChatGPT Desktop Super-App (Chat + Work + Codex)",
+      "category": "desktop_work",
+      "description": "Unified desktop app merging ChatGPT, Work mode, and Codex; available Free on Mac/Windows as of Jul 9 2026.",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Web",
+        "Mobile"
+      ],
+      "launchDate": "2026-07-09",
+      "status": "ga",
+      "sourceUrls": [
+        "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+        "https://chatgpt.com/download"
+      ],
+      "notes": "Prior Codex standalone app merges into ChatGPT desktop."
+    },
+    {
+      "id": "codex-micro",
+      "companyId": "openai",
+      "name": "Codex Micro (Work Louder)",
+      "category": "hardware",
+      "description": "$230 RGB macropad / controller co-designed with Work Louder for multi-agent Codex workflows; live status lights, tactile controls.",
+      "platforms": [
+        "USB-C hardware"
+      ],
+      "pricingNotes": "$230 USD",
+      "launchDate": "2026-07-15",
+      "status": "ga",
+      "sourceUrls": [
+        "https://openai.com/supply/co-lab/work-louder/"
+      ],
+      "notes": "First OpenAI-branded hardware packaging for coding agents (distinct from broader Jony Ive device rumors)."
+    },
+    {
+      "id": "openai-partner-network",
+      "companyId": "openai",
+      "name": "OpenAI Partner Network",
+      "category": "partner_network",
+      "description": "Global partner program to build, sell, deliver AI solutions. $150M investment; target 300k certified consultants by EOY 2026.",
+      "platforms": [],
+      "launchDate": "2026-06-14",
+      "status": "ga",
+      "sourceUrls": [
+        "https://openai.com/index/introducing-openai-partner-network/"
+      ],
+      "notes": "Systems integration, consulting, technology, data partners."
+    },
+    {
+      "id": "claude-partner-network",
+      "companyId": "anthropic",
+      "name": "Claude Partner Network",
+      "category": "partner_network",
+      "description": "Partner program with $100M investment; certifications, Services Track, Partner Hub (Jun 2026).",
+      "platforms": [],
+      "launchDate": "2026-03-12",
+      "status": "ga",
+      "sourceUrls": [
+        "https://www.anthropic.com/news/claude-partner-network",
+        "https://www.anthropic.com/news/services-track-partner-hub"
+      ],
+      "notes": "10k+ certified consultants reported by Jun 2026 updates; ~100 vetted partners expanding."
+    },
+    {
+      "id": "gemini-education",
+      "companyId": "google",
+      "name": "Gemini for Education + Academy + Cloud Skills Boost",
+      "category": "education",
+      "description": "Full learning environment for educators/professionals; webinars, skills paths, Academy content.",
+      "platforms": [
+        "Web"
+      ],
+      "status": "ga",
+      "sourceUrls": [
+        "https://edu.google.com",
+        "https://cloud.google.com/learn/training"
+      ],
+      "notes": "Strong distribution moat for Google Cloud + Gemini adoption."
+    },
+    {
+      "id": "grok-build",
+      "companyId": "xai",
+      "name": "Grok Build (CLI + API model)",
+      "category": "cli",
+      "description": "Agentic coding CLI and grok-build-0.1 API; MCP/skills; multi-agent patterns. Cursor acquisition migration in flight.",
+      "platforms": [
+        "CLI",
+        "API"
+      ],
+      "launchDate": "2026-05-14",
+      "status": "ga",
+      "sourceUrls": [
+        "https://x.ai/news/grok-build-0-1",
+        "https://docs.x.ai/build/overview"
+      ],
+      "notes": "Post-Cursor close (exp. Q3 2026) should deepen IDE + managed cloud agents."
+    },
+    {
+      "id": "grok-imagine",
+      "companyId": "xai",
+      "name": "Grok Imagine (API + product surface)",
+      "category": "multimodal",
+      "description": "Image and video generation/editing; Agent Mode canvas capability. Strong models; packaging/ecosystem lag competitors.",
+      "platforms": [
+        "API",
+        "Web",
+        "App"
+      ],
+      "launchDate": "2026-01-28",
+      "status": "ga",
+      "sourceUrls": [
+        "https://x.ai/news/grok-imagine-api",
+        "https://docs.x.ai/developers/models"
+      ],
+      "notes": "Capability high; hardware collab and GTM amplification underweight vs Codex Micro pattern."
+    },
+    {
+      "id": "grok-enterprise",
+      "companyId": "xai",
+      "name": "Grok Business / Enterprise",
+      "category": "enterprise",
+      "description": "SSO, SCIM, RBAC, SOC2, compliance options exist. Public case studies, ROI calculators, and detailed marketing pages lag competitors.",
+      "platforms": [
+        "Web",
+        "API"
+      ],
+      "pricingNotes": "Custom enterprise pricing",
+      "status": "ga",
+      "sourceUrls": [
+        "https://x.ai/grok/business",
+        "https://x.ai/api"
+      ],
+      "notes": "Feature completeness ≠ GTM transparency. Opportunity is documentation and sales motion visibility."
+    },
+    {
+      "id": "cursor-ide",
+      "companyId": "anysphere",
+      "name": "Cursor IDE + Managed Agents",
+      "category": "ide",
+      "description": "Market-leading AI coding IDE and managed agent workflows. SpaceX acquiring Anysphere for $60B (announced Jun 16 2026, close Q3 2026).",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "status": "ga",
+      "sourceUrls": [
+        "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
+        "https://www.reuters.com/legal/transactional/spacex-buy-anysphere-60-billion-2026-06-16/"
+      ],
+      "notes": "Strategic input into Grok Build / broader Grok coding surface."
+    },
+    {
+      "id": "grokathon",
+      "companyId": "xai",
+      "name": "Grokathon / Community Events",
+      "category": "other",
+      "description": "Existing hackathon brand; scale and sponsorship cadence lag competitive intensity of the space.",
+      "platforms": [],
+      "status": "ga",
+      "sourceUrls": [],
+      "notes": "Expand frequency, prize pools, campus + enterprise sponsorships."
+    }
+  ],
+  "features": [
+    {
+      "id": "feat-desktop-work",
+      "slug": "desktop-work-app",
+      "name": "Native Desktop \"Work\" Super-App",
+      "category": "desktop",
+      "description": "Polished desktop app with chat + agentic work + coding surfaces unified.",
+      "sortOrder": 10
+    },
+    {
+      "id": "feat-computer-use",
+      "slug": "computer-use",
+      "name": "Computer Use / Desktop Control",
+      "category": "agentic",
+      "description": "OS-level control of apps, browser, files.",
+      "sortOrder": 20
+    },
+    {
+      "id": "feat-multi-agent",
+      "slug": "multi-agent-swarms",
+      "name": "Multi-Agent Swarms / Dispatch",
+      "category": "agentic",
+      "description": "Parallel agents, dispatch from mobile, long-running orchestration.",
+      "sortOrder": 30
+    },
+    {
+      "id": "feat-managed-cloud-agents",
+      "slug": "managed-cloud-agents",
+      "name": "Managed Cloud Coding Agents",
+      "category": "coding",
+      "description": "Hosted agents with repos, PRs, long-horizon tasks.",
+      "sortOrder": 40
+    },
+    {
+      "id": "feat-ide-deep",
+      "slug": "ide-deep-integration",
+      "name": "Deep IDE Integration",
+      "category": "coding",
+      "description": "First-class IDE (diffs, multi-repo, enterprise coding env).",
+      "sortOrder": 50
+    },
+    {
+      "id": "feat-cli-coding",
+      "slug": "cli-coding-agent",
+      "name": "CLI Coding Agent",
+      "category": "coding",
+      "description": "Terminal-native agentic coding CLI.",
+      "sortOrder": 60
+    },
+    {
+      "id": "feat-image-gen",
+      "slug": "image-generation",
+      "name": "Image Generation & Editing",
+      "category": "multimodal",
+      "description": "Text-to-image and multi-image edit.",
+      "sortOrder": 70
+    },
+    {
+      "id": "feat-video-gen",
+      "slug": "video-generation",
+      "name": "Video Generation",
+      "category": "multimodal",
+      "description": "Text/image-to-video with audio where available.",
+      "sortOrder": 80
+    },
+    {
+      "id": "feat-hardware",
+      "slug": "hardware-packaging",
+      "name": "Hardware / Controller Packaging",
+      "category": "ecosystem",
+      "description": "First-party or co-branded hardware amplifying agent workflows.",
+      "sortOrder": 90
+    },
+    {
+      "id": "feat-enterprise-sso",
+      "slug": "enterprise-sso-scim",
+      "name": "Enterprise SSO / SCIM / RBAC",
+      "category": "enterprise",
+      "description": "Identity, provisioning, access control.",
+      "sortOrder": 100
+    },
+    {
+      "id": "feat-enterprise-visibility",
+      "slug": "enterprise-public-gtm",
+      "name": "Public Enterprise GTM Transparency",
+      "category": "enterprise",
+      "description": "Case studies, ROI calculators, detailed public offering pages.",
+      "sortOrder": 110
+    },
+    {
+      "id": "feat-partner-network",
+      "slug": "partner-consultant-network",
+      "name": "Funded Partner / Consultant Network",
+      "category": "distribution",
+      "description": "Formal SI/consultant program with capital and certification targets.",
+      "sortOrder": 120
+    },
+    {
+      "id": "feat-education",
+      "slug": "education-learning-stack",
+      "name": "Education & Learning Platform",
+      "category": "distribution",
+      "description": "Academy, webinars, educator tracks, skills badges.",
+      "sortOrder": 130
+    },
+    {
+      "id": "feat-hackathons",
+      "slug": "hackathons-community",
+      "name": "Hackathons & Sponsored Community",
+      "category": "ecosystem",
+      "description": "Scale of hosted/sponsored developer events.",
+      "sortOrder": 140
+    },
+    {
+      "id": "feat-open-weights",
+      "slug": "open-weights-releases",
+      "name": "Open-Weight Frontier Releases",
+      "category": "pricing",
+      "description": "Regular open model releases at competitive quality/cost.",
+      "sortOrder": 150
+    },
+    {
+      "id": "feat-api-cost",
+      "slug": "api-cost-leadership",
+      "name": "Aggressive API Cost Position",
+      "category": "pricing",
+      "description": "Price/performance for high-volume agents.",
+      "sortOrder": 160
+    }
+  ],
+  "matrix": [
+    {
+      "companyId": "xai",
+      "featureId": "feat-desktop-work",
+      "supportLevel": "none",
+      "notes": "No official polished Work/desktop super-app comparable to Claude Desktop or ChatGPT Work.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-desktop-work",
+      "supportLevel": "full",
+      "notes": "Chat + Work + Codex desktop super-app Jul 9 2026.",
+      "evidenceUrl": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-desktop-work",
+      "supportLevel": "superior",
+      "notes": "Claude Desktop Chat/Cowork/Code; computer use; Dispatch.",
+      "evidenceUrl": "https://code.claude.com/docs/en/desktop",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-desktop-work",
+      "supportLevel": "partial",
+      "notes": "Strong web/workspace surfaces; less 'Work desktop' narrative than OpenAI/Anthropic.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-desktop-work",
+      "supportLevel": "none",
+      "notes": "API/open-weight focus.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "moonshot",
+      "featureId": "feat-desktop-work",
+      "supportLevel": "partial",
+      "notes": "Kimi product surfaces; not Western desktop Work pattern.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-computer-use",
+      "supportLevel": "partial",
+      "notes": "Agentic tooling in Build/Grok; full OS computer-use product packaging less visible than Claude/OpenAI.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-computer-use",
+      "supportLevel": "full",
+      "notes": "Computer use powered path in Work/Codex (GPT-5.6 cited).",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-computer-use",
+      "supportLevel": "full",
+      "notes": "Computer use on macOS/Windows via Desktop Cowork/Code.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-computer-use",
+      "supportLevel": "partial",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-computer-use",
+      "supportLevel": "unknown",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "moonshot",
+      "featureId": "feat-computer-use",
+      "supportLevel": "partial",
+      "notes": "Agent loops; OS packaging varies.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-multi-agent",
+      "supportLevel": "full",
+      "notes": "Grok Build multi-agent / Heavy-style patterns; Imagine Agent Mode.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-multi-agent",
+      "supportLevel": "full",
+      "notes": "Codex multi-agent + hardware status lights.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-multi-agent",
+      "supportLevel": "full",
+      "notes": "Dispatch routes to Code/Cowork sessions.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "moonshot",
+      "featureId": "feat-multi-agent",
+      "supportLevel": "superior",
+      "notes": "K2.6 multi-agent collaboration claims (hundreds of agents).",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-multi-agent",
+      "supportLevel": "partial",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-multi-agent",
+      "supportLevel": "partial",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-managed-cloud-agents",
+      "supportLevel": "partial",
+      "notes": "Build CLI/API strong; managed cloud agents incomplete pending Cursor migration.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-managed-cloud-agents",
+      "supportLevel": "full",
+      "notes": "Codex cloud + desktop Work integration.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-managed-cloud-agents",
+      "supportLevel": "full",
+      "notes": "Claude Code remote/Dispatch patterns.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anysphere",
+      "featureId": "feat-managed-cloud-agents",
+      "supportLevel": "superior",
+      "notes": "Cursor managed agents — strategic asset post-acquisition.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-managed-cloud-agents",
+      "supportLevel": "full",
+      "notes": "Vertex / agent tooling on Cloud.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-managed-cloud-agents",
+      "supportLevel": "none",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-ide-deep",
+      "supportLevel": "partial",
+      "notes": "Grok Build CLI; Cursor IDE path after close.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-ide-deep",
+      "supportLevel": "full",
+      "notes": "Codex IDE-adjacent + desktop diffs/PR review.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-ide-deep",
+      "supportLevel": "full",
+      "notes": "Claude Code + Desktop Code tab + VS Code/JetBrains.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anysphere",
+      "featureId": "feat-ide-deep",
+      "supportLevel": "superior",
+      "notes": "Cursor is the IDE category leader being acquired.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-ide-deep",
+      "supportLevel": "partial",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-ide-deep",
+      "supportLevel": "none",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-cli-coding",
+      "supportLevel": "full",
+      "notes": "Grok Build CLI + grok-build-0.1 API.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-cli-coding",
+      "supportLevel": "full",
+      "notes": "Codex CLI heritage merged into desktop story.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-cli-coding",
+      "supportLevel": "full",
+      "notes": "Claude Code CLI.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-cli-coding",
+      "supportLevel": "partial",
+      "notes": "Community CLIs on open weights.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "moonshot",
+      "featureId": "feat-cli-coding",
+      "supportLevel": "partial",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-cli-coding",
+      "supportLevel": "partial",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-image-gen",
+      "supportLevel": "full",
+      "notes": "Grok Imagine image models + edit; competitive pricing.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-image-gen",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-image-gen",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-image-gen",
+      "supportLevel": "partial",
+      "notes": "Vision strong; gen packaging less core brand.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-image-gen",
+      "supportLevel": "partial",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "moonshot",
+      "featureId": "feat-image-gen",
+      "supportLevel": "full",
+      "notes": "K2.6 VLM lineage.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-video-gen",
+      "supportLevel": "full",
+      "notes": "Grok Imagine video+audio; Agent Mode canvas underrated.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-video-gen",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-video-gen",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-video-gen",
+      "supportLevel": "none",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-video-gen",
+      "supportLevel": "none",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "moonshot",
+      "featureId": "feat-video-gen",
+      "supportLevel": "partial",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-hardware",
+      "supportLevel": "none",
+      "notes": "No Grok/Imagine hardware packaging equivalent to Codex Micro.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-hardware",
+      "supportLevel": "full",
+      "notes": "Codex Micro $230 Work Louder collab.",
+      "evidenceUrl": "https://openai.com/supply/co-lab/work-louder/",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-hardware",
+      "supportLevel": "none",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-hardware",
+      "supportLevel": "none",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-hardware",
+      "supportLevel": "none",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "moonshot",
+      "featureId": "feat-hardware",
+      "supportLevel": "none",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-enterprise-sso",
+      "supportLevel": "full",
+      "notes": "SSO, SCIM, RBAC documented on Business page.",
+      "evidenceUrl": "https://x.ai/grok/business",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-enterprise-sso",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-enterprise-sso",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-enterprise-sso",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "microsoft",
+      "featureId": "feat-enterprise-sso",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-enterprise-sso",
+      "supportLevel": "partial",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-enterprise-visibility",
+      "supportLevel": "partial",
+      "notes": "Enterprise exists but relatively opaque vs peers' case studies and ROI content.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-enterprise-visibility",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-enterprise-visibility",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-enterprise-visibility",
+      "supportLevel": "superior",
+      "notes": "Cloud + case studies + education flywheel.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "microsoft",
+      "featureId": "feat-enterprise-visibility",
+      "supportLevel": "superior",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-enterprise-visibility",
+      "supportLevel": "partial",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-partner-network",
+      "supportLevel": "none",
+      "notes": "No formal funded partner/consultant network at OpenAI/Anthropic scale.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-partner-network",
+      "supportLevel": "superior",
+      "notes": "$150M; 300k consultants target EOY 2026.",
+      "evidenceUrl": "https://openai.com/index/introducing-openai-partner-network/",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-partner-network",
+      "supportLevel": "full",
+      "notes": "$100M Claude Partner Network + Services Track/Hub.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-partner-network",
+      "supportLevel": "full",
+      "notes": "Longstanding Cloud partner ecosystem.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "microsoft",
+      "featureId": "feat-partner-network",
+      "supportLevel": "superior",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-partner-network",
+      "supportLevel": "none",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-education",
+      "supportLevel": "none",
+      "notes": "No Gemini-class Academy + webinar + educator stack.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-education",
+      "supportLevel": "partial",
+      "notes": "Learn docs + academy-style content expanding.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-education",
+      "supportLevel": "partial",
+      "notes": "Courses/cert via partner program.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-education",
+      "supportLevel": "superior",
+      "notes": "Gemini for Education, Academy, Skills Boost.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "microsoft",
+      "featureId": "feat-education",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-education",
+      "supportLevel": "none",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-hackathons",
+      "supportLevel": "partial",
+      "notes": "Grokathon exists; scale lag vs competitive intensity.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-hackathons",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-hackathons",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-hackathons",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-hackathons",
+      "supportLevel": "partial",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "moonshot",
+      "featureId": "feat-hackathons",
+      "supportLevel": "partial",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-open-weights",
+      "supportLevel": "none",
+      "notes": "Closed frontier models; API-first.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-open-weights",
+      "supportLevel": "none",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-open-weights",
+      "supportLevel": "none",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-open-weights",
+      "supportLevel": "partial",
+      "notes": "Gemma line; flagship Gemini closed.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "meta",
+      "featureId": "feat-open-weights",
+      "supportLevel": "superior",
+      "notes": "Llama open distribution.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-open-weights",
+      "supportLevel": "superior",
+      "notes": "V4-Pro/Flash MIT open weights.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "moonshot",
+      "featureId": "feat-open-weights",
+      "supportLevel": "superior",
+      "notes": "K2.6 / K2.7-Code open weights.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "alibaba",
+      "featureId": "feat-open-weights",
+      "supportLevel": "superior",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "xai",
+      "featureId": "feat-api-cost",
+      "supportLevel": "full",
+      "notes": "Competitive API pricing; Build model economical.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "openai",
+      "featureId": "feat-api-cost",
+      "supportLevel": "partial",
+      "notes": "Premium frontier pricing.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "anthropic",
+      "featureId": "feat-api-cost",
+      "supportLevel": "partial",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "deepseek",
+      "featureId": "feat-api-cost",
+      "supportLevel": "superior",
+      "notes": "Open + API cost pressure leader.",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "moonshot",
+      "featureId": "feat-api-cost",
+      "supportLevel": "superior",
+      "asOf": "2026-07-22"
+    },
+    {
+      "companyId": "google",
+      "featureId": "feat-api-cost",
+      "supportLevel": "full",
+      "asOf": "2026-07-22"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "gap-desktop-work",
+      "title": "No polished Work / desktop super-app",
+      "description": "Grok lacks an official native desktop application comparable to Claude Desktop (Chat + Cowork + Code) or OpenAI's ChatGPT desktop super-app with Work mode and integrated Codex. Web/mobile alone leave power users and knowledge-work workflows on competitor surfaces.\n",
+      "competitorExamples": [
+        "Claude Desktop Chat/Cowork/Code (Anthropic)",
+        "ChatGPT Desktop Chat/Work/Codex (OpenAI, Jul 9 2026)"
+      ],
+      "grokStatus": "missing",
+      "revenueImpact": 5,
+      "userDemand": 5,
+      "competitiveUrgency": 5,
+      "recommendedAction": "Ship Grok Desktop (macOS/Windows) with Chat + Work + Build tabs; unify agentic knowledge work and coding; match free/paid tier access messaging.\n",
+      "ownerTeam": "product",
+      "status": "open",
+      "seeded": true,
+      "sourceUrls": [
+        "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+        "https://code.claude.com/docs/en/desktop"
+      ],
+      "priorityScore": 5,
+      "priority": "high"
+    },
+    {
+      "id": "gap-cursor-migration",
+      "title": "Cursor capabilities not fully productized into Grok Build",
+      "description": "SpaceX announced a $60B all-stock acquisition of Anysphere (Cursor) on Jun 16 2026, expected to close Q3 2026. Managed cloud agents, deep IDE, and enterprise coding tools must be migrated and productized into Grok Build and the broader Grok surface before competitors lock enterprise coding budgets.\n",
+      "competitorExamples": [
+        "Cursor managed agents + IDE (Anysphere)",
+        "ChatGPT Work + Codex desktop",
+        "Claude Code / Desktop Code tab"
+      ],
+      "grokStatus": "partial",
+      "revenueImpact": 5,
+      "userDemand": 5,
+      "competitiveUrgency": 5,
+      "recommendedAction": "Publish migration roadmap milestones; prioritize managed cloud agents, multi-repo IDE, enterprise controls, and single-brand Grok Build experience post-close.\n",
+      "ownerTeam": "eng",
+      "status": "in_progress",
+      "seeded": true,
+      "sourceUrls": [
+        "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
+        "https://www.reuters.com/legal/transactional/spacex-buy-anysphere-60-billion-2026-06-16/"
+      ],
+      "priorityScore": 5,
+      "priority": "high"
+    },
+    {
+      "id": "gap-imagine-packaging",
+      "title": "Grok Imagine capable but under-packaged vs Codex hardware ecosystem",
+      "description": "Grok Imagine (including Agent Mode canvas) is competitively strong on image/video, but lacks the hardware packaging and ecosystem amplification OpenAI applies to Codex via Codex Micro ($230 Work Louder macropad with agent status RGB and tactile controls).\n",
+      "competitorExamples": [
+        "Codex Micro / Work Louder (OpenAI)"
+      ],
+      "grokStatus": "partial",
+      "revenueImpact": 3,
+      "userDemand": 4,
+      "competitiveUrgency": 3,
+      "recommendedAction": "Launch creator hardware collab or first-party controller for Imagine/Build agents; amplify Agent Mode canvas in GTM; showcase end-to-end creative agent workflows.\n",
+      "ownerTeam": "product",
+      "status": "open",
+      "seeded": true,
+      "sourceUrls": [
+        "https://openai.com/supply/co-lab/work-louder/",
+        "https://x.ai/news/grok-imagine-api"
+      ],
+      "priorityScore": 3.3,
+      "priority": "medium"
+    },
+    {
+      "id": "gap-enterprise-visibility",
+      "title": "Enterprise offering exists but public visibility lags",
+      "description": "Grok Business/Enterprise includes SSO, SCIM, RBAC, SOC2 and sales contact paths, but remains comparatively secretive vs competitors' public case studies, ROI calculators, and detailed product pages. This suppresses inbound enterprise demand and partner enablement.\n",
+      "competitorExamples": [
+        "OpenAI enterprise pages and partner co-sell",
+        "Anthropic enterprise + Partner Hub",
+        "Google Cloud AI case studies"
+      ],
+      "grokStatus": "partial",
+      "revenueImpact": 5,
+      "userDemand": 4,
+      "competitiveUrgency": 4,
+      "recommendedAction": "Publish detailed enterprise pages, named case studies (where allowed), ROI calculator, compliance matrix, and transparent sales motion for GTM.\n",
+      "ownerTeam": "gtm",
+      "status": "open",
+      "seeded": true,
+      "sourceUrls": [
+        "https://x.ai/grok/business"
+      ],
+      "priorityScore": 4.4,
+      "priority": "high"
+    },
+    {
+      "id": "gap-partner-network",
+      "title": "No formal funded partner / consultant network",
+      "description": "OpenAI Partner Network (Jun 14 2026) commits $150M and targets 300k certified consultants. Anthropic Claude Partner Network (Mar 2026) committed $100M with Services Track and Partner Hub. xAI lacks a comparable formal, well-funded, highly visible channel program.\n",
+      "competitorExamples": [
+        "OpenAI Partner Network ($150M, 300k consultants)",
+        "Claude Partner Network ($100M)"
+      ],
+      "grokStatus": "missing",
+      "revenueImpact": 5,
+      "userDemand": 3,
+      "competitiveUrgency": 5,
+      "recommendedAction": "Launch Grok Partner Network with multi-year funding, certification curriculum, co-sell mechanics, and public partner directory.\n",
+      "ownerTeam": "partnerships",
+      "status": "open",
+      "seeded": true,
+      "sourceUrls": [
+        "https://openai.com/index/introducing-openai-partner-network/",
+        "https://www.anthropic.com/news/services-track-partner-hub"
+      ],
+      "priorityScore": 4.4,
+      "priority": "high"
+    },
+    {
+      "id": "gap-education",
+      "title": "No full online learning environment comparable to Google",
+      "description": "Google's Gemini for Education, Gemini Academy, Cloud Skills Boost, and regular webinars form a complete learning environment for educators and professionals. Grok lacks a comparable structured Academy + webinar cadence.\n",
+      "competitorExamples": [
+        "Gemini for Education / Academy / Cloud Skills Boost (Google)"
+      ],
+      "grokStatus": "missing",
+      "revenueImpact": 3,
+      "userDemand": 3,
+      "competitiveUrgency": 3,
+      "recommendedAction": "Stand up Grok Academy with role-based paths (builder, educator, enterprise admin), monthly webinar series, and certification badges tied to partner program.\n",
+      "ownerTeam": "marketing",
+      "status": "open",
+      "seeded": true,
+      "sourceUrls": [
+        "https://edu.google.com",
+        "https://cloud.google.com/learn/training"
+      ],
+      "priorityScore": 3,
+      "priority": "medium"
+    },
+    {
+      "id": "gap-hackathons",
+      "title": "Limited hackathon and sponsorship scale",
+      "description": "Grokathon exists but overall hosted/sponsored hackathon scale and visibility lag the competitive intensity of frontier AI community acquisition.\n",
+      "competitorExamples": [
+        "OpenAI / Anthropic / Google / cloud provider hackathon calendars"
+      ],
+      "grokStatus": "partial",
+      "revenueImpact": 2,
+      "userDemand": 3,
+      "competitiveUrgency": 2,
+      "recommendedAction": "Expand Grokathon cadence, prize pools, university and enterprise sponsorships; integrate Build + Imagine tracks.\n",
+      "ownerTeam": "marketing",
+      "status": "open",
+      "seeded": true,
+      "sourceUrls": [],
+      "priorityScore": 2.3,
+      "priority": "low"
+    },
+    {
+      "id": "gap-chinese-velocity",
+      "title": "Chinese open-weight cost and velocity pressure",
+      "description": "DeepSeek V4-Pro/Flash (Apr 2026) and Moonshot Kimi K2.6 / K2.7-Code deliver frontier-adjacent quality with open weights, multi-agent coding loops, and aggressive cost — compressing API margins and accelerating agent builders outside Western closed ecosystems.\n",
+      "competitorExamples": [
+        "DeepSeek V4-Pro / V4-Flash",
+        "Kimi K2.6 / K2.7-Code",
+        "Qwen3.6 open line"
+      ],
+      "grokStatus": "partial",
+      "revenueImpact": 4,
+      "userDemand": 4,
+      "competitiveUrgency": 5,
+      "recommendedAction": "Maintain cost ladder and throughput leadership on API; optional distill/open strategy evaluation; dedicate PM dashboard to CN release velocity weekly.\n",
+      "ownerTeam": "product",
+      "status": "watching",
+      "seeded": true,
+      "sourceUrls": [
+        "https://api-docs.deepseek.com/news/news260424",
+        "https://www.kimi.com/blog/kimi-k2-6"
+      ],
+      "priorityScore": 4.3,
+      "priority": "high"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "opp-desktop-work",
+      "title": "Steal share: Desktop Work / knowledge-work super-app",
+      "description": "Enterprise and prosumer budgets consolidating into single desktop Work apps (OpenAI Jul 2026, Anthropic Cowork).",
+      "linkedGapIds": [
+        "gap-desktop-work"
+      ],
+      "linkedFinancialSignalIds": [
+        "fin-anthropic-arr",
+        "fin-openai-arr"
+      ],
+      "marketCategory": "Productivity / agentic work apps",
+      "estimatedTamNotes": "Overlaps with OpenAI/Anthropic enterprise + prosumer subscription growth; coding agents accelerating ARR.",
+      "recommendedMove": "Fast-follow Grok Desktop Work with Build tab; position real-time search + Imagine as differentiators.",
+      "urgency": "high",
+      "status": "open"
+    },
+    {
+      "id": "opp-coding-agents",
+      "title": "Steal share: Enterprise coding agents post-Cursor close",
+      "description": "Coding agents are a primary driver of Anthropic/OpenAI revenue growth narratives; Cursor deal is the lever.",
+      "linkedGapIds": [
+        "gap-cursor-migration"
+      ],
+      "linkedFinancialSignalIds": [
+        "fin-anthropic-arr",
+        "fin-cursor-deal"
+      ],
+      "marketCategory": "Developer tools / coding agents",
+      "estimatedTamNotes": "Category pricing power high; Claude Code cited as multi-billion billings trajectory in press.",
+      "recommendedMove": "Make Grok Build + Cursor the default enterprise coding platform; aggressive migration incentives.",
+      "urgency": "high",
+      "status": "open"
+    },
+    {
+      "id": "opp-partner-channel",
+      "title": "Steal share: SI and consultant channel",
+      "description": "$150M OpenAI and $100M Anthropic channel programs will own enterprise deployment mindshare if unchallenged.",
+      "linkedGapIds": [
+        "gap-partner-network",
+        "gap-enterprise-visibility"
+      ],
+      "linkedFinancialSignalIds": [
+        "fin-openai-partner",
+        "fin-anthropic-partner"
+      ],
+      "marketCategory": "Enterprise services channel",
+      "estimatedTamNotes": "Partner-sourced pipeline becomes majority of enterprise AI deals as programs mature.",
+      "recommendedMove": "Fund Grok Partner Network; target Global SI + boutique AI consultancies; co-marketing pool.",
+      "urgency": "high",
+      "status": "open"
+    },
+    {
+      "id": "opp-imagine-creators",
+      "title": "Steal share: Creative multimodal packaging",
+      "description": "Hardware + creator narrative can elevate Imagine from underrated API to default creative agent brand.",
+      "linkedGapIds": [
+        "gap-imagine-packaging"
+      ],
+      "linkedFinancialSignalIds": [],
+      "marketCategory": "Creative tools / prosumer multimodal",
+      "recommendedMove": "Imagine hardware collab + creator fund + Agent Mode showcases.",
+      "urgency": "medium",
+      "status": "open"
+    },
+    {
+      "id": "opp-education",
+      "title": "Steal share: Education and professional enablement",
+      "description": "Google's education stack feeds long-term Cloud/Gemini lock-in.",
+      "linkedGapIds": [
+        "gap-education"
+      ],
+      "linkedFinancialSignalIds": [
+        "fin-google-cloud-placeholder"
+      ],
+      "marketCategory": "Education / skilling",
+      "recommendedMove": "Grok Academy + educator free tiers + weekly webinars.",
+      "urgency": "medium",
+      "status": "open"
+    },
+    {
+      "id": "opp-cn-cost",
+      "title": "Defend/expand: Cost-sensitive agent builders",
+      "description": "DeepSeek/Kimi open models siphon hobbyist and startup token volume.",
+      "linkedGapIds": [
+        "gap-chinese-velocity"
+      ],
+      "linkedFinancialSignalIds": [],
+      "marketCategory": "API / open-weight competition",
+      "recommendedMove": "Transparent price/perf leadership messaging; throughput SLAs; optional open strategy review.",
+      "urgency": "high",
+      "status": "open"
+    }
+  ],
+  "financialSignals": [
+    {
+      "id": "fin-openai-arr",
+      "companyId": "openai",
+      "signalType": "arr_estimate",
+      "period": "2026 H1",
+      "metricName": "Annualized revenue run-rate",
+      "metricValue": "24-25",
+      "unit": "USD billions",
+      "isEstimate": true,
+      "quote": "Press reports place OpenAI ARR run-rate around $24–25B in early/mid 2026.",
+      "sourceUrl": "https://www.saastr.com/anthropic-just-passed-openai-in-revenue-while-spending-4x-less-to-train-their-models/",
+      "sourceReliability": "reputable_press",
+      "asOf": "2026-04-06",
+      "implicationForGrok": "Large subscription + API revenue pool; desktop Work and Partner Network designed to protect/expand it."
+    },
+    {
+      "id": "fin-anthropic-arr",
+      "companyId": "anthropic",
+      "signalType": "arr_estimate",
+      "period": "2026-04",
+      "metricName": "Annualized revenue run-rate",
+      "metricValue": "30+",
+      "unit": "USD billions",
+      "isEstimate": true,
+      "quote": "Multiple outlets reported Anthropic ~$30B+ ARR run-rate in April 2026, with strong coding-agent contribution.",
+      "sourceUrl": "https://www.cnbc.com/2026/05/20/anthropic-revenue-explosive-growth-ipo-profitable-quarter.html",
+      "sourceReliability": "reputable_press",
+      "asOf": "2026-05-20",
+      "implicationForGrok": "Coding agents and enterprise Claude Code are high-revenue categories Grok Build must contest."
+    },
+    {
+      "id": "fin-openai-partner",
+      "companyId": "openai",
+      "signalType": "other",
+      "period": "2026-06",
+      "metricName": "Partner Network commitment",
+      "metricValue": "150",
+      "unit": "USD millions",
+      "isEstimate": false,
+      "quote": "OpenAI Partner Network: $150M investment; 300,000 certified consultants target by EOY 2026.",
+      "sourceUrl": "https://openai.com/index/introducing-openai-partner-network/",
+      "sourceReliability": "official",
+      "asOf": "2026-06-14",
+      "implicationForGrok": "Channel land-grab for enterprise deployment; delayed partner program risks SI default to OpenAI/Anthropic."
+    },
+    {
+      "id": "fin-anthropic-partner",
+      "companyId": "anthropic",
+      "signalType": "other",
+      "period": "2026-03",
+      "metricName": "Claude Partner Network commitment",
+      "metricValue": "100",
+      "unit": "USD millions",
+      "isEstimate": false,
+      "quote": "Claude Partner Network launched with $100M investment; Services Track and Partner Hub added Jun 2026.",
+      "sourceUrl": "https://www.anthropic.com/news/services-track-partner-hub",
+      "sourceReliability": "official",
+      "asOf": "2026-06-03",
+      "implicationForGrok": "Partner certification and directory become enterprise purchase criteria."
+    },
+    {
+      "id": "fin-cursor-deal",
+      "companyId": "anysphere",
+      "signalType": "acquisition",
+      "period": "2026-06",
+      "metricName": "Acquisition valuation",
+      "metricValue": "60",
+      "unit": "USD billions",
+      "isEstimate": false,
+      "quote": "SpaceX to acquire Cursor/Anysphere for $60B all-stock; expected close Q3 2026.",
+      "sourceUrl": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
+      "sourceReliability": "official",
+      "asOf": "2026-06-16",
+      "implicationForGrok": "Largest strategic lever for coding agent market share if productized into Grok Build."
+    },
+    {
+      "id": "fin-google-cloud-placeholder",
+      "companyId": "google",
+      "signalType": "cloud_growth",
+      "period": "2026 earnings seasons",
+      "metricName": "Google Cloud growth / AI contribution",
+      "metricValue": "Track next 10-Q",
+      "unit": "n/a",
+      "isEstimate": true,
+      "quote": "Monitor Alphabet earnings for Cloud growth and AI contribution commentary.",
+      "sourceUrl": "https://abc.xyz/investor/",
+      "sourceReliability": "official",
+      "asOf": "2026-07-22",
+      "implicationForGrok": "Education + Cloud partner flywheel funds Gemini distribution."
+    },
+    {
+      "id": "fin-msft-azure-placeholder",
+      "companyId": "microsoft",
+      "signalType": "cloud_growth",
+      "period": "2026 earnings seasons",
+      "metricName": "Azure AI + OpenAI partnership commentary",
+      "metricValue": "Track next 10-Q",
+      "unit": "n/a",
+      "isEstimate": true,
+      "sourceUrl": "https://www.microsoft.com/en-us/investor",
+      "sourceReliability": "official",
+      "asOf": "2026-07-22",
+      "implicationForGrok": "Azure is primary OpenAI distribution; enterprise deals often multi-cloud — need Grok presence."
+    },
+    {
+      "id": "fin-amzn-aws-placeholder",
+      "companyId": "amazon",
+      "signalType": "cloud_growth",
+      "period": "2026 earnings seasons",
+      "metricName": "AWS AI / Bedrock commentary",
+      "metricValue": "Track next 10-Q",
+      "unit": "n/a",
+      "isEstimate": true,
+      "sourceUrl": "https://ir.aboutamazon.com",
+      "sourceReliability": "official",
+      "asOf": "2026-07-22",
+      "implicationForGrok": "Bedrock multi-model hosting; ensure Grok availability and co-sell."
+    }
+  ],
+  "events": [
+    {
+      "id": "evt-cursor-deal",
+      "eventType": "acquisition",
+      "companyId": "anysphere",
+      "title": "SpaceX announces $60B Cursor / Anysphere acquisition",
+      "summary": "All-stock deal announced Jun 16 2026; expected close Q3 2026. Strategic for Grok Build coding surface.",
+      "occurredAt": "2026-06-16",
+      "sourceUrl": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
+      "severity": "critical",
+      "tags": [
+        "coding",
+        "grok-build",
+        "acquisition"
+      ]
+    },
+    {
+      "id": "evt-openai-partner",
+      "eventType": "partner_program",
+      "companyId": "openai",
+      "title": "OpenAI Partner Network launches ($150M, 300k consultants)",
+      "summary": "Formal global partner program for SI/consulting channel.",
+      "occurredAt": "2026-06-14",
+      "sourceUrl": "https://openai.com/index/introducing-openai-partner-network/",
+      "severity": "critical",
+      "tags": [
+        "enterprise",
+        "channel",
+        "gtm"
+      ]
+    },
+    {
+      "id": "evt-anthropic-partner-hub",
+      "eventType": "partner_program",
+      "companyId": "anthropic",
+      "title": "Claude Partner Network Services Track + Partner Hub",
+      "summary": "Expansion of $100M partner program with deployment tiers and portal.",
+      "occurredAt": "2026-06-03",
+      "sourceUrl": "https://www.anthropic.com/news/services-track-partner-hub",
+      "severity": "notable",
+      "tags": [
+        "enterprise",
+        "channel"
+      ]
+    },
+    {
+      "id": "evt-chatgpt-work",
+      "eventType": "product_launch",
+      "companyId": "openai",
+      "title": "ChatGPT desktop super-app ships Work + Codex merge",
+      "summary": "Chat, Work, and Codex available in unified desktop app globally including Free.",
+      "occurredAt": "2026-07-09",
+      "sourceUrl": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+      "severity": "critical",
+      "tags": [
+        "desktop",
+        "work",
+        "codex"
+      ]
+    },
+    {
+      "id": "evt-codex-micro",
+      "eventType": "hardware",
+      "companyId": "openai",
+      "title": "Codex Micro hardware with Work Louder ($230)",
+      "summary": "First OpenAI-branded agent controller macropad for Codex workflows.",
+      "occurredAt": "2026-07-15",
+      "sourceUrl": "https://openai.com/supply/co-lab/work-louder/",
+      "severity": "notable",
+      "tags": [
+        "hardware",
+        "codex",
+        "packaging"
+      ]
+    },
+    {
+      "id": "evt-deepseek-v4",
+      "eventType": "model_release",
+      "companyId": "deepseek",
+      "title": "DeepSeek V4-Pro and V4-Flash open-weight release",
+      "summary": "1.6T/49B MoE Pro and Flash variants; 1M context; MIT open weights.",
+      "occurredAt": "2026-04-24",
+      "sourceUrl": "https://api-docs.deepseek.com/news/news260424",
+      "severity": "critical",
+      "tags": [
+        "chinese",
+        "open-weights",
+        "cost"
+      ]
+    },
+    {
+      "id": "evt-kimi-k26",
+      "eventType": "model_release",
+      "companyId": "moonshot",
+      "title": "Kimi K2.6 release",
+      "summary": "~1T VLM with multi-agent and long-horizon coding emphasis.",
+      "occurredAt": "2026-04-20",
+      "sourceUrl": "https://www.kimi.com/blog/kimi-k2-6",
+      "severity": "critical",
+      "tags": [
+        "chinese",
+        "open-weights",
+        "multi-agent"
+      ]
+    },
+    {
+      "id": "evt-kimi-k27-code",
+      "eventType": "model_release",
+      "companyId": "moonshot",
+      "title": "Kimi K2.7-Code release",
+      "summary": "Coding-focused 1T/32B active MoE built on K2.6.",
+      "occurredAt": "2026-06-12",
+      "severity": "notable",
+      "tags": [
+        "chinese",
+        "coding"
+      ]
+    },
+    {
+      "id": "evt-grok-build",
+      "eventType": "model_release",
+      "companyId": "xai",
+      "title": "grok-build-0.1 on API + Grok Build CLI",
+      "summary": "Coding model public beta at $1/$2 per M tokens; powers Grok Build.",
+      "occurredAt": "2026-05-29",
+      "sourceUrl": "https://x.ai/news/grok-build-0-1",
+      "severity": "notable",
+      "tags": [
+        "grok-build",
+        "coding"
+      ]
+    },
+    {
+      "id": "evt-claude-cowork-ga",
+      "eventType": "product_launch",
+      "companyId": "anthropic",
+      "title": "Claude Cowork generally available on Desktop",
+      "summary": "Agentic knowledge work on macOS/Windows Claude Desktop.",
+      "occurredAt": "2026-04-09",
+      "sourceUrl": "https://support.claude.com/en/articles/12138966-release-notes",
+      "severity": "notable",
+      "tags": [
+        "desktop",
+        "cowork"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "xai-api",
+      "companyId": "xai",
+      "name": "xAI API landing",
+      "url": "https://x.ai/api",
+      "sourceType": "product_page",
+      "cadence": "daily",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "xai-docs-models",
+      "companyId": "xai",
+      "name": "xAI models docs",
+      "url": "https://docs.x.ai/developers/models",
+      "sourceType": "docs",
+      "cadence": "daily",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "xai-news",
+      "companyId": "xai",
+      "name": "xAI news",
+      "url": "https://x.ai/news",
+      "sourceType": "blog",
+      "cadence": "daily",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "xai-business",
+      "companyId": "xai",
+      "name": "Grok Business",
+      "url": "https://x.ai/grok/business",
+      "sourceType": "product_page",
+      "cadence": "weekly",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "openai-blog",
+      "companyId": "openai",
+      "name": "OpenAI index / blog",
+      "url": "https://openai.com/index/",
+      "sourceType": "blog",
+      "cadence": "daily",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "openai-chatgpt-download",
+      "companyId": "openai",
+      "name": "ChatGPT download",
+      "url": "https://chatgpt.com/download",
+      "sourceType": "product_page",
+      "cadence": "weekly",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "openai-codex-micro",
+      "companyId": "openai",
+      "name": "Codex Micro / Work Louder",
+      "url": "https://openai.com/supply/co-lab/work-louder/",
+      "sourceType": "product_page",
+      "cadence": "weekly",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "openai-partner",
+      "companyId": "openai",
+      "name": "OpenAI Partner Network announcement",
+      "url": "https://openai.com/index/introducing-openai-partner-network/",
+      "sourceType": "blog",
+      "cadence": "weekly",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "anthropic-news",
+      "companyId": "anthropic",
+      "name": "Anthropic news",
+      "url": "https://www.anthropic.com/news",
+      "sourceType": "blog",
+      "cadence": "daily",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "anthropic-desktop-docs",
+      "companyId": "anthropic",
+      "name": "Claude Desktop Code docs",
+      "url": "https://code.claude.com/docs/en/desktop",
+      "sourceType": "docs",
+      "cadence": "weekly",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "anthropic-release-notes",
+      "companyId": "anthropic",
+      "name": "Claude release notes",
+      "url": "https://support.claude.com/en/articles/12138966-release-notes",
+      "sourceType": "changelog",
+      "cadence": "daily",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "deepseek-api-news",
+      "companyId": "deepseek",
+      "name": "DeepSeek API news",
+      "url": "https://api-docs.deepseek.com/news/news260424",
+      "sourceType": "blog",
+      "cadence": "daily",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "kimi-blog",
+      "companyId": "moonshot",
+      "name": "Kimi blog",
+      "url": "https://www.kimi.com/blog/kimi-k2-6",
+      "sourceType": "blog",
+      "cadence": "daily",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "qwen-home",
+      "companyId": "alibaba",
+      "name": "Qwen home",
+      "url": "https://qwenlm.github.io",
+      "sourceType": "product_page",
+      "cadence": "daily",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "google-deepmind",
+      "companyId": "google",
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google",
+      "sourceType": "product_page",
+      "cadence": "daily",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "google-edu",
+      "companyId": "google",
+      "name": "Google for Education",
+      "url": "https://edu.google.com",
+      "sourceType": "product_page",
+      "cadence": "weekly",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "meta-ai",
+      "companyId": "meta",
+      "name": "Meta AI",
+      "url": "https://ai.meta.com",
+      "sourceType": "product_page",
+      "cadence": "daily",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "alphabet-ir",
+      "companyId": "google",
+      "name": "Alphabet Investor Relations",
+      "url": "https://abc.xyz/investor/",
+      "sourceType": "ir",
+      "cadence": "quarterly",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "msft-ir",
+      "companyId": "microsoft",
+      "name": "Microsoft Investor Relations",
+      "url": "https://www.microsoft.com/en-us/investor",
+      "sourceType": "ir",
+      "cadence": "quarterly",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "amzn-ir",
+      "companyId": "amazon",
+      "name": "Amazon IR",
+      "url": "https://ir.aboutamazon.com",
+      "sourceType": "ir",
+      "cadence": "quarterly",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "meta-ir",
+      "companyId": "meta",
+      "name": "Meta Investor Relations",
+      "url": "https://investor.atmeta.com",
+      "sourceType": "ir",
+      "cadence": "quarterly",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "companyId": null,
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "sourceType": "news",
+      "cadence": "daily",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    },
+    {
+      "id": "artificial-analysis",
+      "companyId": null,
+      "name": "Artificial Analysis leaderboard",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "sourceType": "leaderboard",
+      "cadence": "daily",
+      "enabled": true,
+      "lastCheckedAt": null,
+      "lastHash": null,
+      "lastStatus": null,
+      "notes": null
+    }
+  ]
+}

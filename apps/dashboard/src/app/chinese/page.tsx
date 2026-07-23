@@ -1,6 +1,4 @@
-import { getChineseModels, getCompanies, getGaps } from "@/lib/queries";
-
-export const dynamic = "force-dynamic";
+import { getChineseModels, getCompanies, getGaps } from "@/lib/data";
 
 export default function ChineseVelocityPage() {
   const models = getChineseModels();

@@ -1,6 +1,4 @@
-import { getProducts } from "@/lib/queries";
-
-export const dynamic = "force-dynamic";
+import { getProducts } from "@/lib/data";
 
 export default function ProductsPage() {
   const products = getProducts();

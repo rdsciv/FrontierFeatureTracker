@@ -1,7 +1,5 @@
 import { ReliabilityBadge } from "@/components/Badges";
-import { getFinancialSignals } from "@/lib/queries";
-
-export const dynamic = "force-dynamic";
+import { getFinancialSignals } from "@/lib/data";
 
 export default function FinancialPage() {
   const signals = getFinancialSignals();

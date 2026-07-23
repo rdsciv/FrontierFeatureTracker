@@ -1,7 +1,5 @@
 import { PriorityBadge } from "@/components/Badges";
-import { getGaps } from "@/lib/queries";
-
-export const dynamic = "force-dynamic";
+import { getGaps } from "@/lib/data";
 
 export default function GapsPage() {
   const gaps = getGaps();

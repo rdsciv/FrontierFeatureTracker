@@ -1,7 +1,5 @@
 import { SeverityBadge } from "@/components/Badges";
-import { getEvents, getModels } from "@/lib/queries";
-
-export const dynamic = "force-dynamic";
+import { getEvents, getModels } from "@/lib/data";
 
 export default function TimelinePage() {
   const events = getEvents(100);
