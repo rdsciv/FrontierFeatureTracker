@@ -206,12 +206,15 @@ models:
     slug: glm-5.2
     releaseDate: "2026-06-16"
     status: ga
-    paramsTotal: "~744B"
+    paramsTotal: "~744-753B"
+    paramsActive: "~40B (secondary)"
     moe: true
     contextWindow: "1M"
     modalities: [text, tools]
     openWeights: true
     license: MIT
+    apiInputPerM: 1.4
+    apiOutputPerM: 4.4
     capabilityDelta: >
       Flagship for long-horizon tasks; solid 1M context. Open weights HF/ModelScope. Press/lab claims
       beat GPT-5.5 on multiple long-horizon coding benches at ~1/6 API cost. Top open coding agent pressure.
@@ -256,6 +259,8 @@ models:
     modalities: [text, tools]
     openWeights: true
     license: MIT
+    apiInputPerM: 0.435
+    apiOutputPerM: 0.87
     capabilityDelta: Still the post-DeepSeek-shock open MoE coding/cost baseline through mid-2026; R2/V5 not confirmed GA late Jul.
     sourceUrls:
       - https://api-docs.deepseek.com/news/news260424
@@ -274,6 +279,8 @@ models:
     modalities: [text, tools]
     openWeights: true
     license: MIT
+    apiInputPerM: 0.14
+    apiOutputPerM: 0.28
     capabilityDelta: Cheap/fast open MoE for high-volume agents.
     sourceUrls:
       - https://api-docs.deepseek.com/news/news260424
@@ -298,6 +305,24 @@ models:
       - https://www.minimax.io
     lastVerifiedAt: "2026-07-23"
     notes: Specs from secondary research brief; re-verify against official model card.
+
+  - id: qwen-3-8-max
+    companyId: alibaba
+    name: Qwen3.8-Max-Preview
+    slug: qwen-3.8-max
+    releaseDate: "2026-07-19"
+    status: preview
+    paramsTotal: "2.4T"
+    moe: true
+    modalities: [text, image, video, tools]
+    openWeights: false
+    capabilityDelta: >
+      Alibaba Jul 19 preview: 2.4T multimodal MoE flagship response to K3. Open weights promised "soon"
+      (no firm date). Vendor claim: second only to Fable 5 on internal suite — treat as marketing until independent.
+    sourceUrls:
+      - https://qwen.ai
+    lastVerifiedAt: "2026-07-23"
+    notes: Weights not public as of research date; still mostly closed preview.
 
   - id: qwen-3-6-plus
     companyId: alibaba
@@ -1062,6 +1087,33 @@ financialSignals:
     asOf: "2026-06-16"
     implicationForGrok: Largest lever for coding agent market share if productized.
 
+  - id: fin-deepseek-flash-pricing
+    companyId: deepseek
+    signalType: other
+    period: "2026-07"
+    metricName: DeepSeek V4-Flash API (cache-miss / output)
+    metricValue: "0.14 / 0.28"
+    unit: "USD per M tokens"
+    isEstimate: false
+    quote: "Official API docs: Flash cache-miss $0.14 in / $0.28 out; Pro $0.435 / $0.87."
+    sourceUrl: https://api-docs.deepseek.com
+    sourceReliability: official
+    asOf: "2026-07-23"
+    implicationForGrok: "Structural cost floor for commodity frontier intelligence — Grok volume tiers compete here."
+
+  - id: fin-glm-api-pricing
+    companyId: zhipu
+    signalType: other
+    period: "2026-07"
+    metricName: GLM-5.2 API pricing
+    metricValue: "1.40 / 4.40"
+    unit: "USD per M tokens"
+    isEstimate: false
+    sourceUrl: https://docs.z.ai/guides/overview/pricing
+    sourceReliability: official
+    asOf: "2026-07-23"
+    implicationForGrok: "MIT open + cheap API = dual pressure on closed coding agents."
+
   - id: fin-k3-api-pricing
     companyId: moonshot
     signalType: other
@@ -1102,6 +1154,16 @@ financialSignals:
     implicationForGrok: Education + Cloud flywheel funds Gemini distribution.
 
 events:
+  - id: evt-qwen-3-8
+    eventType: model_release
+    companyId: alibaba
+    title: Alibaba previews Qwen3.8-Max (2.4T multimodal)
+    summary: Sparse MoE multimodal flagship; open weights promised soon; positioned as K3-era response.
+    occurredAt: "2026-07-19"
+    sourceUrl: https://qwen.ai
+    severity: notable
+    tags: [chinese, multimodal, preview]
+
   - id: evt-kimi-k3
     eventType: model_release
     companyId: moonshot
