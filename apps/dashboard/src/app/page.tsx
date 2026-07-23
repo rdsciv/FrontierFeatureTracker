@@ -146,6 +146,29 @@ export default function CommandCenterPage() {
           ))}
         </section>
       </div>
+
+      <section className="card" style={{ marginTop: "1.25rem" }}>
+        <h2 style={{ marginTop: 0 }}>Grok strengths (fair — not only gaps)</h2>
+        <ul className="muted" style={{ marginBottom: 0 }}>
+          <li>
+            <strong style={{ color: "var(--text)" }}>Price/perf among closed APIs</strong> — Grok 4.5
+            ~$2/$6 per M tokens vs Sol $5/$30 and Fable $10/$50; strong Terminal-Bench class efficiency.
+          </li>
+          <li>
+            <strong style={{ color: "var(--text)" }}>Cursor path</strong> — already in Cursor on all
+            plans; $60B acquisition is the enterprise coding lever if executed.
+          </li>
+          <li>
+            <strong style={{ color: "var(--text)" }}>Real-time + X distribution</strong> and{" "}
+            <strong style={{ color: "var(--text)" }}>Imagine</strong> multimodal (packaging problem,
+            not capability absence).
+          </li>
+          <li>
+            <strong style={{ color: "var(--text)" }}>Enterprise identity primitives exist</strong> —
+            SSO/SCIM/RBAC; gap is public GTM, not zero product.
+          </li>
+        </ul>
+      </section>
     </>
   );
 }

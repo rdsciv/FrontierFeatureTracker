@@ -1,7 +1,7 @@
 {
   "baselineDate": "2026-07-01",
   "asOf": "2026-07-23",
-  "exportedAt": "2026-07-23T10:37:06.659Z",
+  "exportedAt": "2026-07-23T10:37:53.676Z",
   "companies": [
     {
       "id": "xai",
@@ -1580,7 +1580,7 @@
     {
       "id": "gap-open-weight-era",
       "title": "No open-weight or distill response in the K3 / GLM-5.2 / Inkling era",
-      "description": "July 2026 is defined by open-weight frontier parity: Kimi K3 (~2.8T, Jul 16), GLM-5.2 (MIT, long-horizon), and Inkling (Apache 2.0 multimodal, Jul 15). Builders, startups, and cost-sensitive enterprises can self-host near-frontier models. Grok remains closed-only with no announced distill/open ladder — this is a distribution and developer-share problem, not a marketing footnote.\n",
+      "description": "July 2026 is defined by open-weight frontier parity: Kimi K3 (~2.8T, Jul 16), GLM-5.2 (MIT, long-horizon), and Inkling (Apache 2.0 multimodal, Jul 15). Builders, startups, and cost-sensitive enterprises can self-host near-frontier models. Grok remains closed-only with no announced distill/open ladder. OpenRouter mid-2026 windows show Chinese-origin models often 30–46%+ of multi-model token volume — structural cost pressure, not a news cycle.\n",
       "competitorExamples": [
         "Kimi K3 open weights (Moonshot, Jul 2026)",
         "GLM-5.2 MIT (Z.ai)",
@@ -1655,6 +1655,32 @@
       "priority": "high"
     },
     {
+      "id": "gap-agent-harness",
+      "title": "Agentic harness packaging lag (long-horizon jobs as product, not chat)",
+      "description": "Market prices multi-hour agency: Kimi K3 demos 24–48h coding/research loops; GLM-5.2 is \"built for long-horizon\"; OpenAI/Anthropic ship Work/Cowork/Code with durable artifacts and computer use. Grok model quality is competitive (e.g. strong Terminal-Bench); conversion fails when multi-hour runs, dashboards, computer use, and harness-normalized evals are not productized. Distinct from Cursor deal execution.\n",
+      "competitorExamples": [
+        "Kimi Work + Kimi Code long-horizon demos",
+        "GLM-5.2 long-horizon positioning",
+        "ChatGPT Work + Codex",
+        "Claude Cowork / Code + computer use"
+      ],
+      "grokStatus": "partial",
+      "revenueImpact": 5,
+      "userDemand": 5,
+      "competitiveUrgency": 4,
+      "recommendedAction": "Ship web-first Grok Work for multi-hour jobs with durable artifacts; first-class computer use; publish harness-normalized benches vs Claude Code / Codex / Kimi Code (same runner).\n",
+      "ownerTeam": "product",
+      "status": "open",
+      "seeded": false,
+      "sourceUrls": [
+        "https://www.kimi.com/blog/kimi-k3",
+        "https://z.ai/blog/glm-5.2",
+        "https://openai.com/index/chatgpt-for-your-most-ambitious-work/"
+      ],
+      "priorityScore": 4.7,
+      "priority": "high"
+    },
+    {
       "id": "gap-cn-cost-velocity",
       "title": "Cost ladder and release cadence vs Chinese open MoE velocity",
       "description": "DeepSeek V4 set the cost floor; GLM-5.2 claims ~1/6 US API cost on long-horizon coding; K3 demand crashed capacity within days of launch — proof of global appetite for cheap frontier-adjacent intelligence. Grok must win price/perf and throughput narratives or lose agent-builder volume permanently.\n",
@@ -1680,17 +1706,18 @@
     },
     {
       "id": "gap-cursor-migration",
-      "title": "Cursor capabilities not yet productized into Grok Build",
-      "description": "SpaceX $60B Anysphere/Cursor deal (Jun 16, close Q3 2026) is the largest strategic lever for coding agent share. Until closed and integrated, Grok lacks Cursor's IDE + managed agent distribution while Sol/Fable ship productized agents now.\n",
+      "title": "Cursor / Grok Build not yet the locked enterprise coding platform",
+      "description": "SpaceX $60B Cursor deal is only valuable if Grok becomes default model + managed agents + enterprise controls inside Cursor before Claude Code / Codex re-anchor budgets. Grok 4.5 is already in Cursor on all plans — attention window is open now; stalls until Q3 close or after free promo end are execution risk on a $60B asset.\n",
       "competitorExamples": [
-        "Cursor IDE + managed agents",
-        "Codex desktop Work",
-        "Claude Code"
+        "Cursor IDE + managed agents (pre-close)",
+        "Codex in ChatGPT Work",
+        "Claude Code / Desktop Code",
+        "Kimi Code terminal product"
       ],
       "grokStatus": "partial",
       "revenueImpact": 5,
-      "userDemand": 4,
-      "competitiveUrgency": 4,
+      "userDemand": 5,
+      "competitiveUrgency": 5,
       "recommendedAction": "Public migration roadmap; interim Build feature parity checklist; day-1 post-close single-brand experience.\n",
       "ownerTeam": "eng",
       "status": "in_progress",
@@ -1698,7 +1725,7 @@
       "sourceUrls": [
         "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html"
       ],
-      "priorityScore": 4.4,
+      "priorityScore": 5,
       "priority": "high"
     },
     {
@@ -1852,6 +1879,22 @@
       "status": "open"
     },
     {
+      "id": "opp-agent-harness",
+      "title": "Steal share: Long-horizon agent product (Work surface)",
+      "description": "Convert model quality into sticky multi-hour agent jobs with durable artifacts — where Kimi Work and Claude Cowork convert.",
+      "linkedGapIds": [
+        "gap-agent-harness",
+        "gap-agentic-coding-product"
+      ],
+      "linkedFinancialSignalIds": [
+        "fin-openrouter-cn-share"
+      ],
+      "marketCategory": "Agentic work / coding harnesses",
+      "recommendedMove": "Web-first Grok Work + computer use + harness-normalized public benches.",
+      "urgency": "high",
+      "status": "open"
+    },
+    {
       "id": "opp-coding-agents",
       "title": "Steal share: Enterprise coding agents post-Cursor",
       "description": "Coding agents drive Anthropic/OpenAI growth narratives; Sol explicitly claims coding SOTA.",
@@ -1945,6 +1988,21 @@
       "implicationForGrok": "Demand for open/cheap frontier is real and immediate — not theoretical."
     },
     {
+      "id": "fin-grok-token-efficiency",
+      "companyId": "xai",
+      "signalType": "other",
+      "period": "2026",
+      "metricName": "Grok 4.5 coding efficiency claims",
+      "metricValue": "SWE-Pro ~64.7; TB2.1 ~83.3; ~$2/$6 per M",
+      "unit": "mixed",
+      "isEstimate": true,
+      "quote": "Gap analysis research: Grok 4.5 strong Terminal-Bench and price/perf among closed APIs; claimed high TPS and token efficiency vs Opus-class on SWE tasks (verify on x.ai/news).",
+      "sourceUrl": "https://x.ai/news/grok-4-5",
+      "sourceReliability": "official",
+      "asOf": "2026-07-23",
+      "implicationForGrok": "Strength to amplify — intelligence-per-dollar is real; packaging and open strategy are the gaps."
+    },
+    {
       "id": "fin-openai-arr",
       "companyId": "openai",
       "signalType": "arr_estimate",
@@ -2014,6 +2072,21 @@
       "sourceReliability": "official",
       "asOf": "2026-06-16",
       "implicationForGrok": "Largest lever for coding agent market share if productized."
+    },
+    {
+      "id": "fin-openrouter-cn-share",
+      "companyId": "deepseek",
+      "signalType": "usage_share",
+      "period": "2026 mid",
+      "metricName": "Chinese-origin model share of OpenRouter token volume",
+      "metricValue": "30-46%+",
+      "unit": "of identified weekly windows",
+      "isEstimate": true,
+      "quote": "OpenRouter rankings / State of AI summaries show Chinese-origin models repeatedly holding high single-digit to mid-double-digit share; some windows higher. Programming spend still Claude-skewed but open providers eroding.",
+      "sourceUrl": "https://openrouter.ai/rankings",
+      "sourceReliability": "estimate",
+      "asOf": "2026-07-23",
+      "implicationForGrok": "Builder tokens go to cheap open/API and Claude harnesses — Grok needs Cursor default + $/task proof + optional open mid-tier."
     },
     {
       "id": "fin-deepseek-flash-pricing",
