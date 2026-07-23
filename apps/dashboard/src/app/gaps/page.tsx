@@ -20,7 +20,11 @@ export default function GapsPage() {
               <span className="badge badge-info">{g.status}</span>
               <span className="tag">{g.ownerTeam}</span>
               <span className="tag">grok: {g.grokStatus}</span>
-              {g.seeded ? <span className="tag">seeded baseline</span> : null}
+              {g.seeded ? (
+                <span className="tag">seeded (re-scored)</span>
+              ) : (
+                <span className="tag">research-derived</span>
+              )}
             </div>
             <h3>{g.title}</h3>
             <p style={{ margin: "0 0 0.5rem" }}>{g.description}</p>

@@ -2,7 +2,7 @@
 
 **Baseline date:** 2026-07-01  
 **As of:** 2026-07-22  
-**Generated:** 2026-07-23T04:56:52.473Z
+**Generated:** 2026-07-23T10:33:58.174Z
 
 Internal competitive intelligence for xAI / SpaceXAI product, GTM, and leadership. Every seeded claim should be re-verified against primary sources before executive decisions.
 

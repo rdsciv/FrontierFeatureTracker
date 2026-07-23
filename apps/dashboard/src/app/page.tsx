@@ -23,15 +23,29 @@ export default function CommandCenterPage() {
       <h1>Command Center</h1>
       <p className="subtitle">
         Living competitive intelligence for Grok / xAI · Baseline{" "}
-        <strong>{meta.baseline_date ?? "—"}</strong> · As of{" "}
+        <strong>{meta.baseline_date ?? "—"}</strong> · Research as of{" "}
         <strong>{meta.as_of ?? "—"}</strong>
         {meta.seeded_at ? (
           <>
             {" "}
-            · Seeded <span className="muted">{meta.seeded_at.slice(0, 10)}</span>
+            · Snapshot <span className="muted">{meta.seeded_at.slice(0, 10)}</span>
           </>
         ) : null}
       </p>
+
+      <div className="card" style={{ marginBottom: "1.25rem", borderColor: "var(--high)" }}>
+        <h2 style={{ color: "var(--high)", marginTop: 0 }}>July 2026 heat (not vibes)</h2>
+        <p className="muted" style={{ marginTop: 0 }}>
+          Gaps below are re-ranked from primary-source research — not a paste of an initial wishlist.
+          The month is defined by <strong style={{ color: "var(--text)" }}>Kimi K3</strong> (2.8T open,
+          Jul 16, signup crisis), <strong style={{ color: "var(--text)" }}>GPT-5.6 Sol</strong> (Jul 9),{" "}
+          <strong style={{ color: "var(--text)" }}>Claude Fable 5</strong> (restored Jul 1),{" "}
+          <strong style={{ color: "var(--text)" }}>GLM-5.2</strong> (MIT long-horizon), and{" "}
+          <strong style={{ color: "var(--text)" }}>Inkling</strong> (open multimodal, Jul 15).
+          Grok 4.5 is competitive on some boards; the gaps are open distribution, generation narrative,
+          and coding-agent productization.
+        </p>
+      </div>
 
       <div className="grid grid-4" style={{ marginBottom: "1.25rem" }}>
         <div className="card">

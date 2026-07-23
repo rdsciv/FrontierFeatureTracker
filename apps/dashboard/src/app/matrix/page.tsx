@@ -6,9 +6,10 @@ const MATRIX_COMPANIES = [
   "openai",
   "anthropic",
   "google",
-  "microsoft",
+  "thinking-machines",
   "deepseek",
   "moonshot",
+  "zhipu",
   "meta",
 ];
 
