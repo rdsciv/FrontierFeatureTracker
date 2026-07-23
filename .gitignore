@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.next/
+out/
+*.db
+*.db-journal
+data/tracker.db
+data/cache/
+.env
+.env.local
+.DS_Store
+*.log
+.turbo/
+coverage/
+reports/alerts/

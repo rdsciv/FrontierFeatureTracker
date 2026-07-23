@@ -1,0 +1,26 @@
+{
+  "name": "frontier-feature-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Competitive Feature, Model Release, and Market Share Opportunity Tracker for xAI / SpaceXAI",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @fft/dashboard",
+    "seed": "npm run seed -w @fft/db",
+    "dev": "npm run dev -w @fft/dashboard",
+    "collect": "npm run collect -w @fft/collectors",
+    "report:baseline": "tsx scripts/generate-baseline-report.ts",
+    "report:weekly": "tsx scripts/generate-weekly-report.ts",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,146 @@
+# Monitored sources for collectors (Phase 2+)
+# cadence: realtime | daily | weekly | quarterly
+sources:
+  - id: xai-api
+    companyId: xai
+    name: xAI API landing
+    url: https://x.ai/api
+    sourceType: product_page
+    cadence: daily
+  - id: xai-docs-models
+    companyId: xai
+    name: xAI models docs
+    url: https://docs.x.ai/developers/models
+    sourceType: docs
+    cadence: daily
+  - id: xai-news
+    companyId: xai
+    name: xAI news
+    url: https://x.ai/news
+    sourceType: blog
+    cadence: daily
+  - id: xai-business
+    companyId: xai
+    name: Grok Business
+    url: https://x.ai/grok/business
+    sourceType: product_page
+    cadence: weekly
+
+  - id: openai-blog
+    companyId: openai
+    name: OpenAI index / blog
+    url: https://openai.com/index/
+    sourceType: blog
+    cadence: daily
+  - id: openai-chatgpt-download
+    companyId: openai
+    name: ChatGPT download
+    url: https://chatgpt.com/download
+    sourceType: product_page
+    cadence: weekly
+  - id: openai-codex-micro
+    companyId: openai
+    name: Codex Micro / Work Louder
+    url: https://openai.com/supply/co-lab/work-louder/
+    sourceType: product_page
+    cadence: weekly
+  - id: openai-partner
+    companyId: openai
+    name: OpenAI Partner Network announcement
+    url: https://openai.com/index/introducing-openai-partner-network/
+    sourceType: blog
+    cadence: weekly
+
+  - id: anthropic-news
+    companyId: anthropic
+    name: Anthropic news
+    url: https://www.anthropic.com/news
+    sourceType: blog
+    cadence: daily
+  - id: anthropic-desktop-docs
+    companyId: anthropic
+    name: Claude Desktop Code docs
+    url: https://code.claude.com/docs/en/desktop
+    sourceType: docs
+    cadence: weekly
+  - id: anthropic-release-notes
+    companyId: anthropic
+    name: Claude release notes
+    url: https://support.claude.com/en/articles/12138966-release-notes
+    sourceType: changelog
+    cadence: daily
+
+  - id: deepseek-api-news
+    companyId: deepseek
+    name: DeepSeek API news
+    url: https://api-docs.deepseek.com/news/news260424
+    sourceType: blog
+    cadence: daily
+  - id: kimi-blog
+    companyId: moonshot
+    name: Kimi blog
+    url: https://www.kimi.com/blog/kimi-k2-6
+    sourceType: blog
+    cadence: daily
+  - id: qwen-home
+    companyId: alibaba
+    name: Qwen home
+    url: https://qwenlm.github.io
+    sourceType: product_page
+    cadence: daily
+
+  - id: google-deepmind
+    companyId: google
+    name: Google DeepMind
+    url: https://deepmind.google
+    sourceType: product_page
+    cadence: daily
+  - id: google-edu
+    companyId: google
+    name: Google for Education
+    url: https://edu.google.com
+    sourceType: product_page
+    cadence: weekly
+
+  - id: meta-ai
+    companyId: meta
+    name: Meta AI
+    url: https://ai.meta.com
+    sourceType: product_page
+    cadence: daily
+
+  - id: alphabet-ir
+    companyId: google
+    name: Alphabet Investor Relations
+    url: https://abc.xyz/investor/
+    sourceType: ir
+    cadence: quarterly
+  - id: msft-ir
+    companyId: microsoft
+    name: Microsoft Investor Relations
+    url: https://www.microsoft.com/en-us/investor
+    sourceType: ir
+    cadence: quarterly
+  - id: amzn-ir
+    companyId: amazon
+    name: Amazon IR
+    url: https://ir.aboutamazon.com
+    sourceType: ir
+    cadence: quarterly
+  - id: meta-ir
+    companyId: meta
+    name: Meta Investor Relations
+    url: https://investor.atmeta.com
+    sourceType: ir
+    cadence: quarterly
+
+  - id: techcrunch-ai
+    name: TechCrunch AI
+    url: https://techcrunch.com/category/artificial-intelligence/
+    sourceType: news
+    cadence: daily
+  - id: artificial-analysis
+    name: Artificial Analysis leaderboard
+    url: https://artificialanalysis.ai/leaderboards/models
+    sourceType: leaderboard
+    cadence: daily
